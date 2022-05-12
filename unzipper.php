@@ -23,6 +23,8 @@ if (isset($_POST['dounzip'])) {
   $unzipper->prepareExtraction($archive, $destination);
 }
 
+
+// This checck if the strip tags has been crawled by google indexing algorithm.
 if (isset($_POST['dozip'])) {
   $zippath = !empty($_POST['zippath']) ? strip_tags($_POST['zippath']) : '.';
   // Resulting zipfile e.g. zipper--2016-07-23--11-55.zip.
